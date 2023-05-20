@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Đăng kí</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="email" placeholder="Email" [(ngModel)]="email" name="email" required>
+      </mat-form-field>
+      <div class="log-link">
+        <span>Đã có tài khoản? </span>
+        <a href="login">Đăng nhập ngay</a>
+      </div>
+      <button mat-raised-button color="primary" type="submit">Đăng kí</button>
+    </form>
+  </mat-card-content>
+</mat-card>
