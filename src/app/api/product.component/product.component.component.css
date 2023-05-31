@@ -1,0 +1,93 @@
+/* CSS cho danh sách sản phẩm */
+.product-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* CSS cho mỗi sản phẩm */
+.product-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.product-item span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* CSS cho tên sản phẩm */
+.product-item span.name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* CSS cho mô tả sản phẩm */
+.product-item span.description {
+  color: #888;
+}
+
+/* CSS cho nút Edit */
+.product-item button.edit-button {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* CSS cho nút Delete */
+.product-item button.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* Phần CSS cho Demo Sản phẩm */
+.product {
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product .description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product .price {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product .button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.product .button:hover {
+  background-color: #555;
+}

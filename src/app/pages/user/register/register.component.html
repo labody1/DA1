@@ -1,23 +1,83 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Đăng kí</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <form (ngSubmit)="onSubmit()">
-      <mat-form-field>
-        <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput type="email" placeholder="Email" [(ngModel)]="email" name="email" required>
-      </mat-form-field>
-      <div class="log-link">
-        <span>Đã có tài khoản? </span>
-        <a href="login">Đăng nhập ngay</a>
-      </div>
-      <button mat-raised-button color="primary" type="submit">Đăng kí</button>
-    </form>
-  </mat-card-content>
-</mat-card>
+<!-- <form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="username">Username:</label>
+    <input
+      type="text"
+      id="username"
+      name="username"
+      [(ngModel)]="credentials.username"
+      required
+    />
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      [(ngModel)]="credentials.password"
+      required
+    />
+  </div>
+  <button type="submit">Login</button>
+</form> -->
+
+<form class="form form-login" (ngSubmit)="onSubmit()">
+    <h1>Regester</h1>
+  
+    <div class="mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input
+        type="email"
+        class="form-control"
+        aria-describedby="emailHelp"
+        id="username"
+        name="username"
+        [(ngModel)]="credentials.username"
+        required
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        aria-describedby="emailHelp"
+        id="email"
+        name="email"
+        [(ngModel)]="credentials.email"
+        required
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="sdt" class="form-label">sdt</label>
+      <input
+        type="sdt"
+        class="form-control"
+
+        id="sdt"
+        name="sdt"
+        [(ngModel)]="credentials.sdt"
+        required
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        name="password"
+        [(ngModel)]="credentials.password"
+        required
+      />
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

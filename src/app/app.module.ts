@@ -17,6 +17,13 @@ import {HttpClientModule} from '@angular/common/http';
 import {MaterialExampleModule} from './material.module';
 import { LoginComponent } from './pages/user/login/login.component';
 import { RegisterComponent } from './pages/user/register/register.component';
+import { ProductService } from './api/product.service';
+import { CommonModule } from '@angular/common';
+import { ProductComponent } from './api/product.component/product.component.component';
+import { ProductDetailComponent } from './api/productDetailComponent/productDetailComponent.component';
+import { ContactComponent } from './pages/contact/contact.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,8 +32,11 @@ import { RegisterComponent } from './pages/user/register/register.component';
     FooterComponent,
     CategoryComponent,
     NotFoundPageComponent,
+    ProductDetailComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProductComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -39,9 +49,12 @@ import { RegisterComponent } from './pages/user/register/register.component';
     HttpClientModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    MaterialExampleModule
+    MaterialExampleModule,
+    CommonModule
   ],
-  providers: [],
+  providers: [
+    ProductService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

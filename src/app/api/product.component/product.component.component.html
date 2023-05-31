@@ -1,0 +1,10 @@
+<ul class="product-list">
+  <li *ngFor="let Product of Product" class="product-item" >
+    <img src="path-to-your-product-image.jpg" alt="Product Image">
+    <h2 class="title">{{Product.name}}</h2>
+    <p class="description">{{Product.description}}</p>
+    <p class="price">{{Product.price}}</p>
+    <button class="edit-button" [routerLink]="['/products', Product.id]" >Mua ngay</button>
+    <button class="delete-button">Thêm vào giỏ hàng</button>
+  </li>
+</ul>
