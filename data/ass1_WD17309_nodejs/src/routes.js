@@ -21,6 +21,15 @@ app.get('/products',async (req,res)=>{
     res.status(500).send(error.message)
     }
 })
+//lấy sản phẩm theo id
+app.get('/products/:id',async (req,res)=>{
+  const product =await Product.findById(req.params.id,req.body)
+    try {
+      res.send(product)
+    } catch (error) {
+    res.status(500).send(error.message)
+    }
+})
 //update sản phẩm
 app.patch('/product/:id',async(req, res)=>{
   try {

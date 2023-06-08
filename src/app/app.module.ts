@@ -3,10 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { CategoryComponent } from './pages/category/category.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -15,28 +11,22 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
 import {MaterialExampleModule} from './material.module';
-import { LoginComponent } from './pages/user/login/login.component';
-import { RegisterComponent } from './pages/user/register/register.component';
 import { ProductService } from './api/product.service';
 import { CommonModule } from '@angular/common';
 import { ProductComponent } from './api/product.component/product.component.component';
-import { ProductDetailComponent } from './api/productDetailComponent/productDetailComponent.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ProductDetailComponent } from './api/productDetail/productDetail.component';
+import { AdminComponent } from './api/admin/admin.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    HeaderComponent,
-    FooterComponent,
-    CategoryComponent,
     NotFoundPageComponent,
-    ProductDetailComponent,
-    LoginComponent,
-    RegisterComponent,
     ProductComponent,
-    ContactComponent
+    ContactComponent,
+    ProductDetailComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

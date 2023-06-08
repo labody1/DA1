@@ -1,8 +1,15 @@
-export interface Product {
-  id: string,
-  name: string,
-  price: number,
-  image:string,
-  quanlity:number,
-  description:string,
+export interface IProduct {
+  _id: string;
+  id:
+  {type:Number},
+  name:
+  {type:String},
+  price:
+  {type:Number},
+  image:
+  {type:String},
+  quanlity:
+  {type:Number},
+  description:
+  {type:String},
 }

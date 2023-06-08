@@ -1,13 +1,13 @@
-import { IProduct } from './../product.model';
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from 'src/app/api//product.service';
-
+import { IProduct } from '../product.model';
+import { ProductService } from '../product.service';
 @Component({
-  selector: 'app-product.component',
-  templateUrl: './product.component.component.html',
-  styleUrls: ['./product.component.component.css']
+  selector: 'app-admin',
+  templateUrl: './admin.component.html',
+  styleUrls: ['./admin.component.css']
 })
-export class ProductComponent implements OnInit {
+export class AdminComponent implements OnInit {
+
   products: IProduct[] = [];
 
   constructor(private productService: ProductService) { }
@@ -20,4 +20,5 @@ export class ProductComponent implements OnInit {
       (error) => console.log(error.message)
     );
   }
+
 }

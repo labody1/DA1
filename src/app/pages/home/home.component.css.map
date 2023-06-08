@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,mBAAmB;EAC5B,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,cAAc;EACtB,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,wBAAwB,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,GAAG;CAItD;;AAVD,AAOE,UAPQ,CAOR,EAAE,CAAC;EACD,cAAc,EAAE,UAAU;CAC3B;;AAGH,AACE,aADW,CACX,GAAG,CAAC;EACF,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,KAAK;EACjB,QAAQ,EAAE,MAAM;CACjB",
-    "sources": [
-        "src/app/pages/home/home.component.scss"
-    ],
-    "names": [],
-    "file": "home.component.css"
-}
